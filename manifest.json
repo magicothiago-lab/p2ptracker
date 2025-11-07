@@ -1,11 +1,14 @@
 {
   "name": "Wealth Club",
   "short_name": "Wealth Club",
-  "start_url": "/",
+  "start_url": "https://www.tomiemon.pro/",
   "display": "standalone",
   "display_override": ["fullscreen"],
   "background_color": "#FFFFFF",
   "theme_color": "#007BFF",
+  "orientation": "portrait",
+  "scope": "https://www.tomiemon.pro/",
+  "description": "Track and manage your portfolio data anywhere.",
   "icons": [
     {
       "src": "/icons/icon-192x192.png",
