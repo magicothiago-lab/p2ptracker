@@ -1,7 +1,7 @@
 {
   "name": "P2P Portfolio Tracker",
   "short_name": "P2PPortfolio",
-  "start_url": "https://storage.googleapis.com/p2ptracker/manifest.json",
+  "start_url": "https://track.tomiemon.pro/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
