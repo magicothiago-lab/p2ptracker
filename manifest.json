@@ -1,12 +1,12 @@
 {
-  "name": "P2P Portfolio Tracker",
-  "short_name": "P2PPortfolio",
-  "start_url": "https://track.tomiemon.pro/",
+  "name": "Wealth Club",
+  "short_name": "Wealth Club",
+  "start_url": "https://www.tomiemon.pro/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
   "orientation": "portrait",
-  "scope": "https://track.tomiemon.pro/",
+  "scope": "https://www.tomiemon.pro/",
   "description": "Track and manage your portfolio data anywhere.",
   "icons": [
     {
