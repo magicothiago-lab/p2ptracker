@@ -1,7 +1,7 @@
 {
   "name": "Wealth Club",
   "short_name": "Wealth Club",
-  "start_url": "https://www.tomiemon.pro/",
+  "start_url": "www.tomiemon.pro",
   "display": "standalone",
   "display_override": ["fullscreen"],
   "background_color": "#FFFFFF",
