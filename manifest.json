@@ -1,0 +1,23 @@
+{
+  "name": "P2P Portfolio Tracker",
+  "short_name": "P2PPortfolio",
+  "start_url": "https://storage.googleapis.com/p2ptracker/manifest.json",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "orientation": "portrait",
+  "scope": "https://track.tomiemon.pro/",
+  "description": "Track and manage your portfolio data anywhere.",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/S680nKX.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/0RxZJf4.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
