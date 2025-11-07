@@ -1,0 +1,1079 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en">
+
+<head>
+  <!-- Google AdSense -->
+ <meta name="google-adsense-account" content="ca-pub-8637723689701898">
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8637723689701898"
+     crossorigin="anonymous"></script>
+ <script>
+   (adsbygoogle = window.adsbygoogle || []).push({
+     google_ad_client: "ca-pub-8637723689701898",
+     enable_page_level_ads: true
+   });
+ </script>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a2540">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Wealth Club">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description"
+        content="Elite investment strategies for discerning investors seeking exceptional returns and wealth preservation.">
+
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://i.ibb.co/Ldx4SFsg/WCLogo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://i.ibb.co/Ldx4SFsg/WCLogo.png">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/Ldx4SFsg/WCLogo.png">
+    <link rel="manifest"
+        href="data:application/json;base64,ewogICJuYW1lIjogIldlYWx0aCBDbHViIiwKICAic2hvcnRfbmFtZSI6ICJXZWFsdGggQ2x1YiIsCiAgInN0YXJ0X3VybCI6ICIuLyIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2Y2ZjlmYyIsCiAgInRoZW1lX2NvbG9yIjogIiMwYTI1NDAiLAogICJkZXNjcmlwdGlvbiI6ICJFbGl0ZSBpbnZlc3RtZW50IHN0cmF0ZWdpZXMgZm9yIGRpc2Nlcm5pbmcgaW52ZXN0b3JzIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiaHR0cHM6Ly9pLmltZ3VyLmNvbS9lWTVpaTdKLnBuZyIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJodHRwczovL2kuaW1ndXIuY29tL2VZNWLPN0oucG5nIiwKICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9CiAgXQp9">
+
+    <title>Wealth Club - Private Investment Fund</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0a2540;
+            --secondary: #00d4aa;
+            --accent: #635bff;
+            --light: #f6f9fc;
+            --dark: #0a2540;
+            --gray: #425466;
+            --footer: #0a2540;
+            --transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] {
+            --primary: #0a2540;
+            --secondary: #00d4aa;
+            --accent: #8a85ff;
+            --light: #16213e;
+            --dark: #ffffff;
+            --gray: #b8c1cc;
+            --footer: #0a2540;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 5%;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        [data-theme="dark"] .navbar {
+            background: rgba(26, 26, 46, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            flex-shrink: 0;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+            max-width: 400px;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .login-btn {
+            padding: 0.6rem 1.5rem;
+            background: linear-gradient(135deg, var(--accent) 0%, #8a85ff 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(99, 91, 255, 0.3);
+            white-space: nowrap;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 91, 255, 0.4);
+        }
+
+        /* Language Selector */
+        .language-selector {
+            display: flex;
+            gap: 0.4rem;
+            padding: 0.4rem;
+            background: rgba(99, 91, 255, 0.1);
+            border-radius: 50px;
+        }
+
+        .lang-btn {
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lang-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .lang-btn.active {
+            background: var(--accent);
+            box-shadow: 0 4px 15px rgba(99, 91, 255, 0.3);
+        }
+
+        /* Dark Mode Toggle */
+        .theme-toggle {
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        [data-theme="dark"] .theme-toggle {
+            background: var(--primary);
+            color: var(--secondary);
+        }
+
+        .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 5% 4rem;
+            background: linear-gradient(135deg, var(--primary) 0%, #1a365d 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            padding: 1rem 2rem;
+            background: var(--secondary);
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            transition: var(--transition);
+            box-shadow: 0 8px 25px rgba(0, 212, 170, 0.3);
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 212, 170, 0.4);
+        }
+
+        .hero-graphics {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .graphic-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            right: -100px;
+        }
+
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -100px;
+            left: 10%;
+        }
+
+        .circle-3 {
+            width: 150px;
+            height: 150px;
+            top: 30%;
+            right: 20%;
+        }
+
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            padding: 3rem 5%;
+            background: white;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+            transition: background-color 0.3s ease;
+        }
+
+        [data-theme="dark"] .stats {
+            background: #1a1a2e;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .stat-number {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        /* Features Section */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 0 5%;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .section-header p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .features {
+            padding: 4rem 5%;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        [data-theme="dark"] .feature-card {
+            background: #1a1a2e;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature-card:hover:before {
+            width: 100%;
+            opacity: 0.05;
+        }
+
+        .feature-icon {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .feature-card h3 {
+            color: var(--dark);
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+            line-height: 1.7;
+            font-size: clamp(0.95rem, 2vw, 1.05rem);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, var(--primary) 0%, #1a365d 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--secondary);
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            transition: var(--transition);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--footer);
+            color: white;
+            padding: 3rem 5% 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .footer-column p {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .social-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 0.75rem 4%;
+                gap: 0.5rem;
+            }
+
+            .logo {
+                height: 35px;
+            }
+
+            .nav-controls {
+                gap: 0.5rem;
+            }
+
+            .language-selector {
+                padding: 0.3rem;
+                gap: 0.3rem;
+            }
+
+            .lang-btn,
+            .theme-toggle {
+                width: 32px;
+                height: 32px;
+                font-size: 0.9rem;
+            }
+
+            .login-btn {
+                padding: 0.5rem 1.2rem;
+                font-size: 0.85rem;
+            }
+
+            .hero {
+                padding: 4rem 4% 3rem;
+                min-height: 400px;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+                padding: 2rem 4%;
+            }
+
+            .features {
+                padding: 3rem 4%;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .cta-section {
+                padding: 3rem 4%;
+            }
+
+            footer {
+                padding: 2rem 4% 1.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .graphic-circle {
+                display: none;
+            }
+        }
+
+        /* Small Mobile Devices */
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                gap: 0.75rem;
+                padding: 0.75rem 3%;
+            }
+
+            .logo {
+                order: 1;
+            }
+
+            .nav-controls {
+                order: 2;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn-primary,
+            .cta-btn {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+
+        /* Tablet Optimizations */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .navbar {
+                padding: 1rem 4%;
+            }
+
+            .hero {
+                padding: 5rem 4% 4rem;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+      
+       /* AdSense Containers */
+        .ad-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 5%;
+            background: var(--light);
+            min-height: 100px;
+        }
+
+        [data-theme="dark"] .ad-container {
+            background: var(--light);
+        }
+
+        .ad-unit {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+      
+    </style>
+    <link rel="me" href="https://www.blogger.com/profile/00182747182249979734" />
+    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+    <meta name='google-adsense-platform-domain' content='blogspot.com' />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://app.tomiemon.pro" class="logo">
+                <img src="https://i.imgur.com/eY5ii7J.png" alt="WealthClub Logo">
+            </a>
+        </div>
+
+        <div class="nav-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="language-selector">
+                <button class="lang-btn" onclick="translatePage('en')" title="English">🇬🇧</button>
+                <button class="lang-btn" onclick="translatePage('pt')" title="Português">🇧🇷</button>
+                <button class="lang-btn" onclick="translatePage('ja')" title="日本語">🇯🇵</button>
+            </div>
+            <a href="https://app.tomiemon.pro" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-graphics">
+            <div class="graphic-circle circle-1"></div>
+            <div class="graphic-circle circle-2"></div>
+            <div class="graphic-circle circle-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="fade-in">Build Your Financial Future</h1>
+            <p class="fade-in delay-1">Elite investment strategies designed for discerning investors seeking exceptional
+                returns and wealth preservation.</p>
+            <div class="hero-btns fade-in delay-2">
+                <a href="https://app.tomiemon.pro" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats">
+        <div class="stat-item fade-in">
+            <div class="stat-number">$33k+</div>
+            <div class="stat-label">Assets Under Management</div>
+        </div>
+        <div class="stat-item fade-in delay-1">
+            <div class="stat-number">10%</div>
+            <div class="stat-label">Average Annual Return</div>
+        </div>
+        <div class="stat-item fade-in delay-2">
+            <div class="stat-number">9+</div>
+            <div class="stat-label">Satisfied Members</div>
+        </div>
+        <div class="stat-item fade-in delay-3">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Years of Excellence</div>
+        </div>
+    </div>
+
+  <!-- AdSense Ad Unit 1 - After Stats -->
+    <div class="ad-container">
+        <div class="ad-unit">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8637723689701898"
+                data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+  
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>Why Choose Wealth Club</h2>
+            <p>Our comprehensive approach to wealth management combines sophisticated strategies with personalized
+                service.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <i class="fas fa-chart-line feature-icon"></i>
+                <h3>Strategic Investment</h3>
+                <p>Our expert team employs sophisticated strategies across diverse asset classes, from equities and
+                    fixed income to alternative investments, ensuring optimal portfolio diversification and
+                    risk-adjusted returns.</p>
+            </div>
+
+            <div class="feature-card fade-in delay-1">
+                <i class="fas fa-shield-alt feature-icon"></i>
+                <h3>Wealth Preservation</h3>
+                <p>Protecting your capital is paramount. We implement robust risk management frameworks and hedging
+                    strategies to safeguard your wealth against market volatility while positioning for growth
+                    opportunities.</p>
+            </div>
+
+            <div class="feature-card fade-in delay-2">
+                <i class="fas fa-user-tie feature-icon"></i>
+                <h3>Personalized Service</h3>
+                <p>Every member receives dedicated attention from our wealth advisors. We craft bespoke investment
+                    solutions tailored to your unique financial goals, risk tolerance, and time horizon.</p>
+            </div>
+
+            <div class="feature-card fade-in">
+                <i class="fas fa-bullseye feature-icon"></i>
+                <h3>Long-Term Vision</h3>
+                <p>We focus on sustainable wealth creation through disciplined, long-term investment approaches. Our
+                    strategies are designed to compound returns steadily while navigating market cycles effectively.</p>
+            </div>
+
+            <div class="feature-card fade-in delay-1">
+                <i class="fas fa-lock feature-icon"></i>
+                <h3>Bank-Level Security</h3>
+                <p>Your assets and personal information are protected by institutional-grade security measures,
+                    including multi-factor authentication, encryption, and partnership with top-tier custodians.</p>
+            </div>
+
+            <div class="feature-card fade-in delay-2">
+                <i class="fas fa-chart-bar feature-icon"></i>
+                <h3>Transparent Reporting</h3>
+                <p>Access comprehensive performance reports, detailed portfolio analytics, and real-time account
+                    information through our secure member portal. Full transparency is our commitment to you.</p>
+            </div>
+        </div>
+    </section>
+
+  <!-- AdSense Ad Unit 2 - After Features -->
+    <div class="ad-container">
+        <div class="ad-unit">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8637723689701898"
+                data-ad-slot="0987654321" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+  
+    <section class="cta-section">
+        <h2 class="fade-in">Ready to Elevate Your Investment Strategy?</h2>
+        <p class="fade-in delay-1">Join an exclusive community of sophisticated investors and gain access to
+            institutional-quality investment opportunities.</p>
+        <a href="https://app.tomiemon.pro" class="cta-btn fade-in delay-2">Access Member Portal</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Wealth Club</h3>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">Building financial futures through
+                        strategic investment and wealth preservation.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/+btRgoRmPJ5NmZjVh" aria-label="Telegram"><i
+                                class="fab fa-telegram"></i></a>
+                        <a href="https://wa.link/fr5kt4" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wealth Club. All rights reserved. | Private Investment Fund</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        // Navbar scroll behavior
+        let lastScrollPosition = 0;
+        const navbar = document.querySelector('.navbar');
+        const navbarHeight = navbar.offsetHeight;
+
+        window.addEventListener('scroll', function () {
+            const currentScrollPosition = window.pageYOffset;
+
+            // Hide navbar on scroll down
+            if (currentScrollPosition > lastScrollPosition && currentScrollPosition > navbarHeight) {
+                navbar.style.transform = 'translateY(-100%)';
+            }
+            // Show navbar on scroll up
+            else if (currentScrollPosition < lastScrollPosition) {
+                navbar.style.transform = 'translateY(0)';
+            }
+
+            lastScrollPosition = currentScrollPosition;
+        });
+
+        // Show navbar when mouse enters top of page
+        document.addEventListener('mousemove', function (e) {
+            if (e.clientY < 100) { // If mouse is near top of page
+                navbar.style.transform = 'translateY(0)';
+            }
+        });
+
+        // Dark mode toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            const icon = document.querySelector('.theme-toggle i');
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            icon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+
+        // Load saved theme
+        window.addEventListener('load', function () {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            const icon = document.querySelector('.theme-toggle i');
+
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            icon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+            document.querySelector('.lang-btn').classList.add('active');
+        });
+
+        // Translation data
+        const translations = {
+            en: {
+                login: "Login",
+                heroTitle: "Build Your Financial Future",
+                heroSubtitle: "Elite investment strategies designed for discerning investors seeking exceptional returns and wealth preservation.",
+                getStarted: "Get Started",
+                stat1: "Assets Under Management",
+                stat2: "Average Annual Return",
+                stat3: "Satisfied Members",
+                stat4: "Years of Excellence",
+                sectionTitle: "Why Choose Wealth Club",
+                sectionSubtitle: "Our comprehensive approach to wealth management combines sophisticated strategies with personalized service.",
+                feature1Title: "Strategic Investment",
+                feature1Text: "Our expert team employs sophisticated strategies across diverse asset classes, from equities and fixed income to alternative investments, ensuring optimal portfolio diversification and risk-adjusted returns.",
+                feature2Title: "Wealth Preservation",
+                feature2Text: "Protecting your capital is paramount. We implement robust risk management frameworks and hedging strategies to safeguard your wealth against market volatility while positioning for growth opportunities.",
+                feature3Title: "Personalized Service",
+                feature3Text: "Every member receives dedicated attention from our wealth advisors. We craft bespoke investment solutions tailored to your unique financial goals, risk tolerance, and time horizon.",
+                feature4Title: "Long-Term Vision",
+                feature4Text: "We focus on sustainable wealth creation through disciplined, long-term investment approaches. Our strategies are designed to compound returns steadily while navigating market cycles effectively.",
+                feature5Title: "Bank-Level Security",
+                feature5Text: "Your assets and personal information are protected by institutional-grade security measures, including multi-factor authentication, encryption, and partnership with top-tier custodians.",
+                feature6Title: "Transparent Reporting",
+                feature6Text: "Access comprehensive performance reports, detailed portfolio analytics, and real-time account information through our secure member portal. Full transparency is our commitment to you.",
+                ctaTitle: "Ready to Elevate Your Investment Strategy?",
+                ctaSubtitle: "Join an exclusive community of sophisticated investors and gain access to institutional-quality investment opportunities.",
+                ctaButton: "Access Member Portal"
+            },
+            pt: {
+                login: "Entrar",
+                heroTitle: "Construa Seu Futuro Financeiro",
+                heroSubtitle: "Estratégias de investimento de elite projetadas para investidores exigentes que buscam retornos excepcionais e preservação de patrimônio.",
+                getStarted: "Começar",
+                stat1: "Ativos Sob Gestão",
+                stat2: "Retorno Anual Médio",
+                stat3: "Membros Satisfeitos",
+                stat4: "Anos de Excelência",
+                sectionTitle: "Por Que Escolher o Wealth Club",
+                sectionSubtitle: "Nossa abordagem abrangente de gestão de patrimônio combina estratégias sofisticadas com serviço personalizado.",
+                feature1Title: "Investimento Estratégico",
+                feature1Text: "Nossa equipe especializada emprega estratégias sofisticadas em diversas classes de ativos, de ações e renda fixa a investimentos alternativos, garantindo diversificação ideal de portfólio e retornos ajustados ao risco.",
+                feature2Title: "Preservação de Patrimônio",
+                feature2Text: "Proteger seu capital é fundamental. Implementamos estruturas robustas de gestão de risco e estratégias de hedge para proteger seu patrimônio contra a volatilidade do mercado enquanto nos posicionamos para oportunidades de crescimento.",
+                feature3Title: "Serviço Personalizado",
+                feature3Text: "Cada membro recebe atenção dedicada de nossos consultores de patrimônio. Criamos soluções de investimento personalizadas adaptadas aos seus objetivos financeiros únicos, tolerância ao risco e horizonte de tempo.",
+                feature4Title: "Visão de Longo Prazo",
+                feature4Text: "Focamos na criação sustentável de riqueza através de abordagens disciplinadas de investimento de longo prazo. Nossas estratégias são projetadas para compor retornos de forma constante enquanto navegamos efetivamente pelos ciclos de mercado.",
+                feature5Title: "Segurança de Nível Bancário",
+                feature5Text: "Seus ativos e informações pessoais são protegidos por medidas de segurança de nível institucional, incluindo autenticação multifator, criptografia e parceria com custodiantes de primeira linha.",
+                feature6Title: "Relatórios Transparentes",
+                feature6Text: "Acesse relatórios abrangentes de desempenho, análises detalhadas de portfólio e informações de conta em tempo real através de nosso portal seguro para membros. Transparência total é nosso compromisso com você.",
+                ctaTitle: "Pronto para Elevar Sua Estratégia de Investimento?",
+                ctaSubtitle: "Junte-se a uma comunidade exclusiva de investidores sofisticados e ganhe acesso a oportunidades de investimento de qualidade institucional.",
+                ctaButton: "Acessar Portal do Membro"
+            },
+            ja: {
+                login: "ログイン",
+                heroTitle: "財務の未来を築く",
+                heroSubtitle: "卓越したリターンと資産保全を求める目の肥えた投資家のために設計されたエリート投資戦略。",
+                getStarted: "始める",
+                stat1: "運用資産",
+                stat2: "平均年間リターン",
+                stat3: "満足している会員",
+                stat4: "卓越した年数",
+                sectionTitle: "Wealth Clubを選ぶ理由",
+                sectionSubtitle: "当社の包括的な資産管理アプローチは、洗練された戦略とパーソナライズされたサービスを組み合わせています。",
+                feature1Title: "戦略的投資",
+                feature1Text: "当社の専門チームは、株式や債券から代替投資まで、多様な資産クラスにわたって洗練された戦略を採用し、最適なポートフォリオの分散とリスク調整後のリターンを確保します。",
+                feature2Title: "資産保全",
+                feature2Text: "お客様の資本を保護することが最も重要です。市場のボラティリティから資産を守りながら成長機会を捉えるため、堅牢なリスク管理フレームワークとヘッジ戦略を実装しています。",
+                feature3Title: "パーソナライズされたサービス",
+                feature3Text: "すべての会員は、当社の資産アドバイザーから専任の注意を受けます。お客様固有の財務目標、リスク許容度、投資期間に合わせたオーダーメイドの投資ソリューションを作成します。",
+                feature4Title: "長期ビジョン",
+                feature4Text: "規律ある長期投資アプローチを通じて持続可能な富の創造に焦点を当てています。当社の戦略は、市場サイクルを効果的にナビゲートしながら、着実にリターンを複利化するように設計されています。",
+                feature5Title: "銀行レベルのセキュリティ",
+                feature5Text: "お客様の資産と個人情報は、多要素認証、暗号化、一流のカストディアンとのパートナーシップを含む機関レベルのセキュリティ対策によって保護されています。",
+                feature6Title: "透明性のあるレポート",
+                feature6Text: "安全な会員ポータルを通じて、包括的なパフォーマンスレポート、詳細なポートフォリオ分析、リアルタイムのアカウント情報にアクセスできます。完全な透明性がお客様への当社のコミットメントです。",
+                ctaTitle: "投資戦略を向上させる準備はできていますか？",
+                ctaSubtitle: "洗練された投資家の独占的なコミュニティに参加し、機関品質の投資機会へのアクセスを獲得してください。",
+                ctaButton: "会員ポータルにアクセス"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function translatePage(lang) {
+            currentLang = lang;
+            const t = translations[lang];
+
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update content
+            document.querySelectorAll('.login-btn').forEach(el => el.textContent = t.login);
+            document.querySelector('.hero h1').textContent = t.heroTitle;
+            document.querySelector('.hero p').textContent = t.heroSubtitle;
+            document.querySelector('.btn-primary').textContent = t.getStarted;
+
+            const statLabels = document.querySelectorAll('.stat-label');
+            statLabels[0].textContent = t.stat1;
+            statLabels[1].textContent = t.stat2;
+            statLabels[2].textContent = t.stat3;
+            statLabels[3].textContent = t.stat4;
+
+            document.querySelector('.section-header h2').textContent = t.sectionTitle;
+            document.querySelector('.section-header p').textContent = t.sectionSubtitle;
+
+            const featureTitles = document.querySelectorAll('.feature-card h3');
+            const featureTexts = document.querySelectorAll('.feature-card p');
+
+            featureTitles[0].textContent = t.feature1Title;
+            featureTexts[0].textContent = t.feature1Text;
+            featureTitles[1].textContent = t.feature2Title;
+            featureTexts[1].textContent = t.feature2Text;
+            featureTitles[2].textContent = t.feature3Title;
+            featureTexts[2].textContent = t.feature3Text;
+            featureTitles[3].textContent = t.feature4Title;
+            featureTexts[3].textContent = t.feature4Text;
+            featureTitles[4].textContent = t.feature5Title;
+            featureTexts[4].textContent = t.feature5Text;
+            featureTitles[5].textContent = t.feature6Title;
+            featureTexts[5].textContent = t.feature6Text;
+
+            document.querySelector('.cta-section h2').textContent = t.ctaTitle;
+            document.querySelector('.cta-section p').textContent = t.ctaSubtitle;
+            document.querySelector('.cta-btn').textContent = t.ctaButton;
+        }
+
+        // Fade in elements on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const fadeInOnScroll = function () {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                }
+            });
+        };
+
+        // Initialize elements with opacity 0
+        fadeElements.forEach(element => {
+            element.style.opacity = "0";
+            element.style.transform = "translateY(30px)";
+            element.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+        });
+
+        window.addEventListener('scroll', fadeInOnScroll);
+        window.addEventListener('load', fadeInOnScroll);
+      
+      // Initialize AdSense ads
+        window.addEventListener('load', function () {
+            try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.error('AdSense error:', e);
+            }
+        });
+      
+    </script>
+</body>
+
+</html>
